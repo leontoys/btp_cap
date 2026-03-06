@@ -146,3 +146,7 @@ dial tcp: lookup MyCapAppDest.dest on 100.64.0.10:53: no such host
 - https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-build-side-by-side-extensions-for-sap-s-4hana-public-cloud-with-sap/ba-p/
 - https://github.com/SAP-samples/btp-side-by-side-extension-learning-journey
 - https://community.sap.com/t5/technology-blog-posts-by-sap/how-to-build-side-by-side-extensions-for-sap-s-4hana-public-cloud-with-sap/ba-p/14235644
+
+# Git
+- git reset . -> removes unstaged changes
+- git clean -f -> removes untracked files
