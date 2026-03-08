@@ -5,4 +5,12 @@ service CatalogService @(odata:'/browse') {
     author.name as author,
     genre.name as genre,
   } excluding { createdBy, modifiedBy };
+
+extend service CatalogService with {
+  @requires: 'authenticated-user'
+  action submitOrder ( book: Books:ID, quantity : Integer );
 }
+
+}
+
+

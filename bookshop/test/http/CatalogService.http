@@ -13,3 +13,14 @@ Authorization: Basic {{username}}:{{password}}
 # @name Currencies_GET
 GET {{server}}/browse/Currencies
 Authorization: Basic {{username}}:{{password}}
+
+
+### CatalogService.submitOrder()
+POST http://localhost:4004/browse/submitOrder
+Content-Type: application/json
+Authorization: Basic bob:
+
+{
+  "book": 201,
+  "quantity": 3
+}
