@@ -155,5 +155,5 @@ dial tcp: lookup MyCapAppDest.dest on 100.64.0.10:53: no such host
 - https://github.com/SAP-samples/cap-cds-hands-on/tree/main/exercises/04 - In CAP, domain -> data element ->
 field kind of definition is considered bad and instead keep it simple
 
-# Continue
-https://github.com/SAP-samples/cap-cds-hands-on/tree/main/exercises/05
+# Handson
+https://github.com/SAP-samples/cap-cds-hands-on
