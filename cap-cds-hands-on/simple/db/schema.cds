@@ -1,4 +1,4 @@
-using Currency from '@sap/cds/common';
+using Currency from './common';
 
 namespace workshop;
 
