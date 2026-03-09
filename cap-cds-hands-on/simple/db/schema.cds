@@ -21,6 +21,7 @@ entity Products : cuid,
       name  : String;
       stock : Integer;
       price : Price;
+      supplier : Association to Suppliers;
 }
 
 entity Suppliers : cuid, 
@@ -28,4 +29,6 @@ entity Suppliers : cuid,
 {
   //key ID      : Integer;
       company : String;
+      products : Association to many Products
+      on products.supplier = $self
 }
