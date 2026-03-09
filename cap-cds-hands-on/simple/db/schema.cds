@@ -32,3 +32,12 @@ entity Suppliers : cuid,
       products : Association to many Products
       on products.supplier = $self
 }
+
+entity Orders : cuid {
+  date  : Date default $now;
+  items : Composition of many {
+            key pos      : Integer;
+                product  : Association to Products;
+                quantity : Integer;
+          }
+}
