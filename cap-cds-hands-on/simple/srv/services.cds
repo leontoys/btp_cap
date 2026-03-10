@@ -4,7 +4,10 @@ using workshop from '../db/schema';
 @path    : '/simple'
 service Simple {
   @cds.redirection.target
-  entity Products as projection on workshop.Products;
+  entity Products as projection on workshop.Products
+  actions{
+    action applyDiscount(percent:Percentage) returns Products:price;
+  };
   entity Suppliers as projection on workshop.Suppliers;
   entity Orders    as projection on workshop.Orders;
   //function outOfStockProducts() returns many Products;
@@ -22,3 +25,8 @@ service Accounting {
   };
 
 }
+
+type Percentage : Integer @assert.range: [
+  1,
+  100
+];
