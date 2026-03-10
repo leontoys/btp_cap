@@ -3,10 +3,12 @@ using workshop from '../db/schema';
 @protocol: 'odata'
 @path    : '/simple'
 service Simple {
+  @cds.redirection.target
   entity Products as projection on workshop.Products;
   entity Suppliers as projection on workshop.Suppliers;
   entity Orders    as projection on workshop.Orders;
-  function outOfStockProducts() returns many Products;
+  //function outOfStockProducts() returns many Products;
+  entity outOfStockProducts as projection on workshop.Products[stock <= 0];
 }
 
 service Accounting {
