@@ -157,3 +157,5 @@ field kind of definition is considered bad and instead keep it simple
 
 # Handson
 https://github.com/SAP-samples/cap-cds-hands-on
+https://github.com/SAP-samples/cap-service-integration-codejam
+
