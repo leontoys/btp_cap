@@ -5,7 +5,8 @@ using workshop from '../db/schema';
 service Simple {
   entity Products as projection on workshop.Products;
   entity Suppliers as projection on workshop.Suppliers;
-    entity Orders    as projection on workshop.Orders;
+  entity Orders    as projection on workshop.Orders;
+  function outOfStockProducts() returns many Products;
 }
 
 service Accounting {
