@@ -1,32 +1,21 @@
 {
-  "name": "@acme/incidents-mgmt",
-  "version": "1.0.0",
-  "description": "A simple CAP project.",
-  "repository": "<Add your repository here>",
-  "license": "UNLICENSED",
-  "private": true,
-  "dependencies": {
-    "@sap/cds": "^9",
-    "express": "^4",
-    "@sap-cloud-sdk/connectivity": "^4",
-    "@sap-cloud-sdk/http-client": "^4",
-    "@sap-cloud-sdk/resilience": "^4"
-  },
-  "engines": {
-    "node": ">=20"
-  },
-  "devDependencies": {
-    "@cap-js/sqlite": "^2"
-  },
-  "scripts": {
-    "start": "cds-serve"
-  },
-  "cds": {
-    "requires": {
-      "API_BUSINESS_PARTNER": {
-        "kind": "odata-v2",
-        "model": "srv/external/API_BUSINESS_PARTNER"
-      }
+    "name": "@acme/incidents-mgmt",
+    "version": "1.0.0",
+    "description": "A simple CAP project.",
+    "repository": "<Add your repository here>",
+    "license": "UNLICENSED",
+    "private": true,
+    "dependencies": {
+        "@sap/cds": "^9",
+        "express": "^4"
+    },
+    "engines": {
+      "node": ">=20"
+    },
+    "devDependencies": {
+        "@cap-js/sqlite": "^2"
+    },
+    "scripts": {
+        "start": "cds-serve"
     }
-  }
 }
