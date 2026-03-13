@@ -163,4 +163,6 @@ https://github.com/SAP-samples/cap-service-integration-codejam
 - saying this has cds.persistance.skip as it is an external service and not translated to db. so we need to mock
 - if we use cds watch , it mocks everything including external service so we get blank output instead of error
 - this mocking we can check in the registry file .cds-services.json
+- we can run cds mock external service --port 5005 and run cds w in another terminal, this will create
+- separate mocking for external service at 5005 port and main service will be served from 4004
 
