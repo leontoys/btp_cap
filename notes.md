@@ -158,4 +158,9 @@ field kind of definition is considered bad and instead keep it simple
 # Handson
 https://github.com/SAP-samples/cap-cds-hands-on
 https://github.com/SAP-samples/cap-service-integration-codejam
+- import edmx file and then do cds import it creates srv/external csn file for external service
+- we can naively expose this service by just adding it in our service file and do cds run, but it gives error
+- saying this has cds.persistance.skip as it is an external service and not translated to db. so we need to mock
+- if we use cds watch , it mocks everything including external service so we get blank output instead of error
+- this mocking we can check in the registry file .cds-services.json
 
