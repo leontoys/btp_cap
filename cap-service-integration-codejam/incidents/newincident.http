@@ -1,0 +1,24 @@
+###
+# @name CustomersQuery
+
+GET http://localhost:4004/odata/v4/incidents/Customers?$top=5
+
+###
+# @name IncidentsCreate
+
+@customer_ID = {{ CustomersQuery.response.body.value[0].ID }}
+
+POST http://localhost:4004/odata/v4/incidents/Incidents
+Content-Type: application/json
+
+{
+  "title": "New Incident {{$timestamp}}",
+  "urgency": "low",
+  "customer_ID": "{{customer_ID}}"
+}
+
+###
+@id = {{IncidentsCreate.response.body.$.ID}}
+
+POST http://localhost:4004/odata/v4/incidents/Incidents(ID={{id}},IsActiveEntity=false)/draftActivate
+Content-Type: application/json
