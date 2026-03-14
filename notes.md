@@ -166,4 +166,5 @@ https://github.com/SAP-samples/cap-service-integration-codejam
 - we can run cds mock external service --port 5005 and run cds w in another terminal, this will create
 - separate mocking for external service at 5005 port and main service will be served from 4004
 - so create a projection of the external service, and annotate and extend the main service using this
+- using sap cloud sdk we delegate the request to the remote service running in a separate process
 - 
