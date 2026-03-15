@@ -167,4 +167,14 @@ https://github.com/SAP-samples/cap-service-integration-codejam
 - separate mocking for external service at 5005 port and main service will be served from 4004
 - so create a projection of the external service, and annotate and extend the main service using this
 - using sap cloud sdk we delegate the request to the remote service running in a separate process
-- 
+
+
+# TODO
+- https://cap.cloud.sap/docs/get-started/learn-more#the-capire-documentation
+- https://github.com/SAP-samples/teched2023-AD264
+- https://github.com/SAP-samples/partner-reference-application
+- https://github.com/SAP-samples/btp-cap-multitenant-saas
+- https://github.com/SAP-samples/cloud-cap-hana-swapi
+- https://learning.sap.com/courses?lsc_product=SAP+Cloud+Application+Programming+Model&page=1
+- https://help.sap.com/docs/btp/btp-developers-guide/tutorials-for-sap-cloud-application-programming-model?locale=en-US
+- https://discovery-center.cloud.sap/missionCatalog/?product=32&search=cap
