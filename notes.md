@@ -168,10 +168,11 @@ https://github.com/SAP-samples/cap-service-integration-codejam
 - so create a projection of the external service, and annotate and extend the main service using this
 - using sap cloud sdk we delegate the request to the remote service running in a separate process
 
+# Teched ( https://github.com/SAP-samples/teched2023-AD264 )
+- create Incidents management app
 
 # TODO
 - https://cap.cloud.sap/docs/get-started/learn-more#the-capire-documentation
-- https://github.com/SAP-samples/teched2023-AD264
 - https://github.com/SAP-samples/partner-reference-application
 - https://github.com/SAP-samples/btp-cap-multitenant-saas
 - https://github.com/SAP-samples/cloud-cap-hana-swapi
