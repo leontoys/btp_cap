@@ -1,0 +1,30 @@
+{
+  "name": "incidents-mgt",
+  "version": "1.0.0",
+  "description": "A modern CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^3.22.0",
+    "@sap/cds": "^8.6.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^1.7.5",
+    "@sap/cds-dk": "^9.6.1",
+    "@sap/ux-specification": "^1.120.16",
+    "axios": "^1.7.9",
+    "chai": "^4.5.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-subset": "^1.6.0"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "test": "npx -y jest",
+    "watch-incidents": "cds watch --open incidents/webapp/index.html?sap-ui-xx-viewCache=false"
+  },
+  "sapux": [
+    "app/incidents"
+  ]
+}
