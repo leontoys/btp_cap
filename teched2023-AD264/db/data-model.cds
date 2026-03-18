@@ -1,5 +1,7 @@
 namespace incidents.mgt;
 
+using { API_BUSINESS_PARTNER as S4 } from 's4-bupa-integration/bupa';
+
 using
 {
     cuid,
@@ -44,4 +46,13 @@ entity Conversations : cuid, managed {
   timestamp : DateTime @cds.on.insert: $now   @title: 'Time';
   author    : String   @cds.on.insert: $user  @title: 'Author' ;
   message   : String                          @title: 'Message';
+}
+
+entity Customers   as projection on S4.A_BusinessPartner {
+  key BusinessPartner         as ID,
+      BusinessPartnerFullName as name
+}
+
+extend Incidents with {
+  customer      : Association to Customers;
 }

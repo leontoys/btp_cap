@@ -6,3 +6,7 @@ service ProcessorService {
   
 }
 
+extend service ProcessorService with {
+  entity Customers as projection on mgt.Customers;
+}
+
