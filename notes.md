@@ -170,6 +170,10 @@ https://github.com/SAP-samples/cap-service-integration-codejam
 
 # Teched ( https://github.com/SAP-samples/teched2023-AD264 )
 - create Incidents management app
+-The user enters a new incident and selects the customer through the value help. The value help shows only remote customer data.
+As soon as the incident record is created, the customer data is written to a local replica table.
+Further requests for the incident's customer are served from this replica table.
+Replicated records will be updated if a remote customer changes.
 
 # TODO
 - https://cap.cloud.sap/docs/get-started/learn-more#the-capire-documentation

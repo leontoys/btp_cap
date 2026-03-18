@@ -52,6 +52,7 @@ entity Customers   as projection on S4.A_BusinessPartner {
   key BusinessPartner         as ID,
       BusinessPartnerFullName as name
 }
+annotate Customers with @cds.persistence.table;
 
 extend Incidents with {
   customer      : Association to Customers;
